@@ -19,6 +19,7 @@ const allPost = await Astro.glob("../content/tips/*.md")
 						title={item?.frontmatter?.title}	
 						time= {item?.frontmatter?.pubDate}
 						tags={item?.frontmatter?.tags} 
+						slug=""
 					/>
 				))
 			}
